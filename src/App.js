@@ -1,4 +1,5 @@
 import React from "react";
+// import { render } from  "react-dom";
 
 const NewComponent = () => {
     return React.createElement("div", {}, [
@@ -8,24 +9,16 @@ const NewComponent = () => {
     ]);
 };
 
-const App = () => {
-    return React.createElement("div", {}, [
-        React.createElement("h1", {}, "Page Title"),
-        React.createElement(NewComponent),
-        React.createElement(NewComponent),
-        React.createElement(NewComponent)
-    ]);
-};
-
-// class App extends React.Component {
-//     handleTitleClick() {
-//         alert("what up!!");
-//         console.log("console");
-//     }
-//     render() {
-//         return React.creatElement("div", {},
-//         React.creatElement('h1', {onClick: this.handleTitleClick}, 'Click Works !')
-//     )}
-// }
+class App extends React.Component {
+    handleTitleClick() {
+        alert("what up!!");
+        console.log("console");
+    }
+    render() {
+        return React.createElement("div", {},
+            React.createElement('h1', { onClick: this.handleTitleClick }, 'Click Dis!')
+        )
+    }
+}
 
 ReactDOM.render(React.createElement(App), document.getElementById("root"));

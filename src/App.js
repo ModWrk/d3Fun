@@ -1,20 +1,19 @@
 const NewComponent = () => {
-    return React.creatElement("div", {}, [
-        React.creatElement("h2", {}, "Component 1 Heading"),
-        React.creatElement("h2", {}, "Component 2 Heading"),
-        React.creatElement("h2", {}, "Component 3 Heading")
-    ]);
-}
+  return React.creatElement("div", {}, [
+    React.creatElement("h2", {}, "Component 1 Heading"),
+    React.creatElement("h2", {}, "Component 2 Heading"),
+    React.creatElement("h2", {}, "Component 3 Heading")
+  ]);
+};
 
 const App = () => {
-    return React.creatElement("div", {}, [
-        React.creatElement('h1', {}, 'Page Title'),
-        React.creatElement(NewComponent),
-        React.creatElement(NewComponent),
-        React.creatElement(NewComponent)
-    ]);
-}
-
+  return React.creatElement("div", {}, [
+    React.creatElement("h1", {}, "Page Title"),
+    React.creatElement(NewComponent),
+    React.creatElement(NewComponent),
+    React.creatElement(NewComponent)
+  ]);
+};
 
 // class App extends React.Component {
 //     handleTitleClick() {
@@ -27,4 +26,4 @@ const App = () => {
 //     )}
 // }
 
-ReactDOM.render(React.creatElement(App), document.getElementById('root')) 
+ReactDOM.render(React.creatElement(App), document.getElementById("root"));

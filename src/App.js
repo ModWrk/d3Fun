@@ -1,13 +1,6 @@
 import React from "react";
 import { render } from "react-dom";
-
-const NewComponent = () => {
-    return React.createElement("div", {}, [
-        React.createElement("h2", {}, "Component 1 Heading"),
-        React.createElement("h2", {}, "Component 2 Heading"),
-        React.createElement("h2", {}, "Component 3 Heading")
-    ]);
-};
+import NewComponent from "./NewComponent";
 
 class App extends React.Component {
     handleTitleClick() {

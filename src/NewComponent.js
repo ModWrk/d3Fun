@@ -1,11 +1,13 @@
 import React from "react";
 
-const NewComponent = () => {
-    return React.createElement("div", {}, [
-        React.createElement("h2", {}, "Component 1 Heading"),
-        React.createElement("h2", {}, "Component 2 Heading"),
-        React.createElement("h2", {}, "Component 3 Heading")
-    ]);
+const NewComponent = props => {
+
+
+    return (
+        <div>
+            <h1>{props.name}</h1>
+        </div>
+    );
 };
 
 export default NewComponent;

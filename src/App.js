@@ -3,14 +3,26 @@ import { render } from "react-dom";
 import NewComponent from "./NewComponent";
 
 class App extends React.Component {
-    handleTitleClick() {
-        alert("what up!!");
-        console.log("console");
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            videos: []
+        }
     }
+    componentDidMount() {
+        const promise =
+            promise.then(console.log, console.error)
+    }
+
     render() {
-        return React.createElement("div", {},
-            React.createElement('h1', { onClick: this.handleTitleClick }, 'Click Dis!')
+        return (
+            <div>
+                <h1>Adopt Me!</h1>
+
+            </div>
         )
+
     }
 }
 
